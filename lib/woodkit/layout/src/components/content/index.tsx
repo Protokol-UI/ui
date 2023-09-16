@@ -1,5 +1,5 @@
-import { WkBox } from '@woodkit/core';
 import WkFooter from '../footer';
+import { WkBox } from '@woodkit/core';
 
 /* eslint-disable-next-line */
 export interface WkContentProps {

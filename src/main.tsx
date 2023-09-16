@@ -1,8 +1,9 @@
+import App from './app/app';
+
+import './tailwind.css';
+
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
-import './tailwind.css'
-
-import App from './app/app';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

@@ -1,5 +1,5 @@
 {
-  "name": "misc",
+  "name": "woodkit-misc",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "lib/woodkit/misc/src",
   "projectType": "library",

@@ -1,5 +1,5 @@
 {
-  "name": "navigation",
+  "name": "woodkit-navigation",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "lib/woodkit/navigation/src",
   "projectType": "library",

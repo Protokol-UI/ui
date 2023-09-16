@@ -9,7 +9,7 @@ export interface WkArticleProps {
 export function WkArticle({ children, footer }: WkArticleProps) {
   return (
     <WkBox component="article" c="flex h-full flex-col pb-10 pt-16">
-      <h1>Welcome to WkArticle!</h1>
+      {children}
       {footer && (
         <WkBox
           c="mx-auto mt-16 w-full max-w-2xl lg:max-w-5xl"

@@ -1,4 +1,5 @@
 import cc from 'classnames';
+
 export interface WkBoxProps {
   children?: React.ReactNode;
   c?: Parameters<typeof cc> | Parameters<typeof cc>[0];

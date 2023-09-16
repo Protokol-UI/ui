@@ -1,7 +1,7 @@
 {
-  "name": "protokol-react",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "plugins/protokol-react/src",
+  "name": "woodkit-react",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "lib/woodkit/plugins/react/src",
   "projectType": "library",
   "targets": {
     "build": {
@@ -10,28 +10,28 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/plugins/protokol-react",
-        "main": "plugins/protokol-react/src/index.ts",
-        "tsConfig": "plugins/protokol-react/tsconfig.lib.json",
+        "outputPath": "dist/lib/woodkit/plugins/react",
+        "main": "lib/woodkit/plugins/react/src/index.ts",
+        "tsConfig": "lib/woodkit/plugins/react/tsconfig.lib.json",
         "assets": [
-          "plugins/protokol-react/*.md",
+          "lib/woodkit/plugins/react/*.md",
           {
-            "input": "./plugins/protokol-react/src",
+            "input": "./lib/woodkit/plugins/react/src",
             "glob": "**/!(*.ts)",
             "output": "./src"
           },
           {
-            "input": "./plugins/protokol-react/src",
+            "input": "./lib/woodkit/plugins/react/src",
             "glob": "**/*.d.ts",
             "output": "./src"
           },
           {
-            "input": "./plugins/protokol-react",
+            "input": "./lib/woodkit/plugins/react",
             "glob": "generators.json",
             "output": "."
           },
           {
-            "input": "./plugins/protokol-react",
+            "input": "./lib/woodkit/plugins/react",
             "glob": "executors.json",
             "output": "."
           }
@@ -45,9 +45,9 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "plugins/protokol-react/**/*.ts",
-          "plugins/protokol-react/package.json",
-          "plugins/protokol-react/generators.json"
+          "lib/woodkit/plugins/react/**/*.ts",
+          "lib/woodkit/plugins/react/package.json",
+          "lib/woodkit/plugins/react/generators.json"
         ]
       }
     }

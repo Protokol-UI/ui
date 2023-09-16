@@ -1,0 +1,17 @@
+import { WkBox } from '@woodkit/core';
+
+export interface Wk<%= className %>Props {
+  children?: React.ReactNode;
+}
+
+export function Wk<%= className %>({ children }: Wk<%= className %>Props) {
+  return (
+    <WkBox c="<%= tw %>">
+      <WkBox c="border">
+        <%= constantName %>
+      </WkBox>
+    </WkBox>
+  );
+}
+
+export default Wk<%= className %>;

@@ -1,5 +1,5 @@
 {
-  "name": "layout",
+  "name": "woodkit-layout",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "lib/woodkit/layout/src",
   "projectType": "library",

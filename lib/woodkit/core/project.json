@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "woodkit-core",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "lib/woodkit/core/src",
   "projectType": "library",
@@ -7,20 +7,14 @@
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "lib/woodkit/core/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["lib/woodkit/core/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "build": {
       "executor": "@nx/vite:build",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/lib/woodkit/core"
