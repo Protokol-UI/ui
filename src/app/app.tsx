@@ -1,11 +1,30 @@
-import { WkFooter, WkHeader, WkLayout, WkSidebar } from '@woodkit/layout';
+import { WkBox } from '@woodkit/core';
+import {
+  WkContent,
+  WkFooter,
+  WkLayout,
+  WkLogo,
+  WkNavigation,
+  WkSidebar,
+  WkTopBar,
+} from '@woodkit/layout';
 
 export function App() {
   return (
     <WkLayout>
-      <WkSidebar>sidebar</WkSidebar>
-      <WkHeader>header</WkHeader>
-      <WkFooter>footer</WkFooter>
+      <WkNavigation>
+        <WkBox c="hidden lg:flex">
+          <WkLogo />
+          <WkTopBar>Topbard</WkTopBar>
+        </WkBox>
+        <WkSidebar>
+          asdf
+        </WkSidebar>
+      </WkNavigation>
+      <WkContent>
+        content
+        <WkFooter>footer</WkFooter>
+      </WkContent>
     </WkLayout>
   );
 }
