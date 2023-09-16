@@ -32,6 +32,9 @@
       ],
       "@woodkit/navigation": [
         "lib/woodkit/navigation/src/index.ts"
+      ],
+      "protokol-react": [
+        "plugins/protokol-react/src/index.ts"
       ]
     }
   },
