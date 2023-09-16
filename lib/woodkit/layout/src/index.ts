@@ -1,8 +1,6 @@
-
+export * from './components/article/index';
 export * from './components/main/index';
-
 export * from './components/sidebar/index';
-
 export * from './components/menu/index';
 export * from './components/top-bar/index';
 export * from './components/logo/index';

@@ -1,7 +1,7 @@
 import { WkBox } from '@woodkit/core';
 import {
+  WkArticle,
   WkContent,
-  WkFooter,
   WkLayout,
   WkLogo,
   WkNavigation,
@@ -17,13 +17,10 @@ export function App() {
           <WkLogo />
           <WkTopBar>Topbard</WkTopBar>
         </WkBox>
-        <WkSidebar>
-          asdf
-        </WkSidebar>
+        <WkSidebar>asdf</WkSidebar>
       </WkNavigation>
-      <WkContent>
-        content
-        <WkFooter>footer</WkFooter>
+      <WkContent footer={'footer'}>
+        <WkArticle footer={'article footer'}>article</WkArticle>
       </WkContent>
     </WkLayout>
   );

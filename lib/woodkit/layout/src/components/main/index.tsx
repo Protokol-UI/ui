@@ -1,11 +1,13 @@
+import { WkBox } from '@woodkit/core';
+
 /* eslint-disable-next-line */
 export interface WkMainProps {}
 
 export function WkMain(props: WkMainProps) {
   return (
-    <div>
+    <WkBox c="flex-auto">
       <h1>Welcome to WkMain!</h1>
-    </div>
+    </WkBox>
   );
 }
 

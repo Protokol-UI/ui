@@ -26,6 +26,12 @@
       ],
       "@woodkit/layout": [
         "lib/woodkit/layout/src/index.ts"
+      ],
+      "@woodkit/misc": [
+        "lib/woodkit/misc/src/index.ts"
+      ],
+      "@woodkit/navigation": [
+        "lib/woodkit/navigation/src/index.ts"
       ]
     }
   },
