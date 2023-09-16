@@ -7,8 +7,8 @@ export default defineConfig({
   cacheDir: './node_modules/.vite/protokol-ui',
 
   server: {
-    port: 4200,
-    host: 'localhost',
+    port: 1111,
+    host: true
   },
 
   preview: {

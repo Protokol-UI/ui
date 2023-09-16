@@ -6,19 +6,15 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "types": [
-      "vite/client",
-      "vitest"
+      "vite/client"
     ]
   },
   "files": [],
   "include": [],
   "references": [
     {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
+      "path": "./tsconfig.lib.json"
     }
   ],
-  "extends": "./tsconfig.base.json"
+  "extends": "../../../tsconfig.base.json"
 }

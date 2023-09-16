@@ -1,13 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { WkFooter, WkHeader, WkLayout, WkSidebar } from '@woodkit/layout';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="protokol-ui" />
-    </div>
+    <WkLayout>
+      <WkSidebar>sidebar</WkSidebar>
+      <WkHeader>header</WkHeader>
+      <WkFooter>footer</WkFooter>
+    </WkLayout>
   );
 }
 
