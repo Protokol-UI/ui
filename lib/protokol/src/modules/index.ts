@@ -1,9 +1,3 @@
-import { KAuthModule } from './auth';
-import { KSearchModule } from './search';
-
-export const KModules = {
-  KSearchModule,
-  KAuthModule,
-};
-
-export { KSearchModule, KAuthModule };
+export * from './auth';
+export * from './search';
+export * from './theme-toggle';

@@ -1,7 +1,5 @@
-export const KSearchModule = () => {
-  return (
-    <div>
-      <h1>Search Module</h1>
-    </div>
-  );
+import { WkSearchBar } from '@woodkit/core';
+
+export const KSearch = () => {
+  return <WkSearchBar />;
 };

@@ -1,7 +1,7 @@
-import { KModules } from '..';
-import { compileSync, EvaluateOptions, evaluateSync } from '@mdx-js/mdx';
+import { KHelpers, KModules } from '..'; // object with my custom components
+import { EvaluateOptions, evaluateSync } from '@mdx-js/mdx';
 import { MDXProvider, useMDXComponents } from '@mdx-js/react';
-import { createElement, FC, Fragment, useCallback, useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import * as runtime from 'react/jsx-runtime';
 
 export interface KomponentProps {
@@ -31,7 +31,7 @@ export const Komponent: FC<KomponentProps> = ({
 }) => {
   const modules =
     components ??
-    Object.entries(KModules).reduce(
+    Object.entries({ ...KModules, ...KHelpers }).reduce(
       (ms, [key, value]) => ({ ...ms, [key]: value }),
       extra,
     );
@@ -48,18 +48,7 @@ export const Komponent: FC<KomponentProps> = ({
       return () => (e as Error).message;
     }
   }, [markdown]);
-  // if (markdown) {
-  //   const compiled = compile(markdown).then((code) => {
-  //     run(code, {}).then((result) => {
-  //       console.log(result);
-  //     })
-  //   });
-  //   return (
-  //     <MDXProvider components={modules}>
-  //       <MDXContent />
-  //     </MDXProvider>
-  //   );
-  // }
+
   return (
     <MDXProvider components={modules}>
       {MDXContent ? <MDXContent /> : children}
