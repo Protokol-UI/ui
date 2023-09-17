@@ -15,7 +15,7 @@ import * as path from 'path';
 
 export async function generator(tree: Tree, options: ComponentGeneratorSchema) {
   const project = readProjectConfiguration(tree, options.project);
-  const { fileName, className } = names(options.name);
+  const { fileName, className, constantName } = names(options.name);
 
   const p = joinPathFragments('components', options.directory || '', fileName);
 
@@ -23,7 +23,7 @@ export async function generator(tree: Tree, options: ComponentGeneratorSchema) {
     tree,
     path.join(__dirname, 'files'),
     joinPathFragments(project.sourceRoot, p),
-    { ...options, className, fileName },
+    { ...options, className, fileName, constantName },
   );
 
   const indexFilePath = joinPathFragments(project.sourceRoot, 'index.ts');

@@ -4,9 +4,10 @@ export interface Wk<%= className %>Props {
   children?: React.ReactNode;
 }
 
-export function Wk<%= className %>({ children }: Wk<%= className %>Props) {
+export const Wk<%= className %>: React.FC<Wk<%= className %>Props> = ({ children }) => {
   return (
     <WkBox c="<%= tw %>">
+      {children}
       <WkBox c="border">
         <%= constantName %>
       </WkBox>

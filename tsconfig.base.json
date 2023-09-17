@@ -18,6 +18,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@protokol/komponent": [
+        "lib/protokol/src/index.ts"
+      ],
       "@src/*": [
         "src/*"
       ],
